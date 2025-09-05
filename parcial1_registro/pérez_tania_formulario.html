@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="Utf-8">
+        <title>Registro</title>
+        <style>
+            body{
+                background-image: url(../registro.html/fondo-form.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                color: white
+            }
+            #div-padre{
+                background-color: rgba(10, 10, 10, 0.7);
+                width:40%;
+                margin: auto;
+
+/*                 
+                margin-left: 470px;
+                margin-right: 470px;
+                margin-top: 110px;
+                margin-bottom: 100px; */
+                padding-top: 30px;
+                padding-bottom: 60px;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-radius: 30px;
+                text-align: center;
+            }
+            *{
+                box-sizing:border-box;
+                max-width: 100%;
+            }
+            .titulo{
+                width: 100%;
+                padding: 3%; color: #878787;
+                background-color: #5e5e5e;
+                padding-top: 3%;
+                padding-left: 9%;
+                border-radius: 79PX;
+                min-height: 20px;
+            }
+            /* .edad{
+                width: 30%;
+            } */
+            .boton-enviar{
+                margin-top: 60px;
+                background-color: #ffffff;
+            }
+            .boton-cancelar{
+
+                background-color: transparent;
+                border: 1px solid #ffffff;
+                margin-top: 20px;
+            }
+            .boton{
+                display: block;
+                color: #878787;
+                padding: 3%; 
+                border-radius: 79PX;
+                
+                width:20%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form id="div-padre">
+            <h1 style="margin: 3px"> Registro </h1>
+            <p style= "padding-top: 1px; padding-bottom: 30px;">Registra tus datos aquí para la posada de este 2025</p>
+            <!--Inicio de input Nombre-->
+            
+            <p style="text-align: left; color: #ffffff;">Nombre completo</p>
+            <input class="titulo" placeholder="Nombre Apellido" >
+
+            <p style="text-align: left; color: #ffffff;">Correo electrónico</p>
+            <input type="email" class ="titulo" placeholder="Ej. correo@dirección">
+
+            <p style="text-align: left; color: #ffffff;">Contraseña</p>
+            <input type="password" class ="titulo" >
+
+            <section>
+                <p style="text-align: left; color: #ffffff;">Edad</p>
+                <input class="titulo edad" type="number" placeholder="17">
+            </section>
+
+            <center>
+                <button class="boton boton-enviar">Enviar</button>
+
+                <button class="boton boton-cancelar">Cancelar</button>
+        </center>
+           
+            
+
+    </form>
+    </body>
+</html>   
