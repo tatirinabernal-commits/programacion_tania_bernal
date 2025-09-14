@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .img-hoja2 {
     background-image: url(hoja2.jpg);
     /* background-image: url(https://i.pinimg.com/originals/8a/8b/27/8a8b2781551437b052d0ce67c355188e.gif); */
@@ -13,6 +16,10 @@
         font-style: normal;
         font-size: 40px;
         padding: 14%;
+}
+.boton{
+    padding-top: 2% ;
+    display: inline-block;
 }
 a{
     font-family: "Instrument Sans", sans-serif;
@@ -40,16 +47,17 @@ a{
     margin-top: 5%;
 }
 .dialog-text2{
-        font-family: "Just Another Hand", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 25px;
-        margin: auto;
-        padding-top: 30%;
-        max-width: max-content
+    font-family: "Just Another Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34.59px;
+    margin: auto;
+    padding-top: 30%;
+    max-width: max-content
         
 }
 .texto-corrido2{
+    /* font-family: "Just Another Hand", cursive; */
     font-family: "Instrument Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -58,18 +66,67 @@ a{
     margin-right: 5%;
     margin-top: 5%;
 }
+.question-text2{
+    font-family: "Just Another Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding: 14%;
+    margin: auto;
+    padding-top: 8%;
+    max-width: max-content
+}
 .dialog-text3{
-     font-family: "Just Another Hand", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 35px;
-        margin-left: 40%;
-        margin-top: 4%;
+    font-family: "Just Another Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    margin-left: 40%;
+    margin-top: 4%;
 }
 .img-hoja4{
-    background-image: url(./hoja\ 4.jpg);
-    background-repeat: no-repeat;
-    size: 100%;
+    min-height: 100vh;
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+        height: 100vh;
+    }
+    .boton{
+        /* display: flex; */
+        position: absolute;
+        /* z-index: 10; */
+        top:91%;
+        margin:0%;
+        max-width: max-content;
+    }
+    .boton1{
+        left: 12%;
+    }
+    .boton2{
+        left:81%;
+    }
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: -2;
+    }
+    .texto{
+        /* position: absolute;
+        top:calc(50%); */
+        width: 50%;
+        padding: 2%;
+        .dialog-text3{
+            margin-bottom: 5%;
+        }
+        p{
+            width: 100%;
+            margin:0%;
+            padding: auto;
+        }
+    }
 }
 .dialog-text4{
      font-family: "Just Another Hand", cursive;
