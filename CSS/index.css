@@ -1,0 +1,81 @@
+.img-hoja2 {
+    background-image: url(hoja2.jpg);
+    /* background-image: url(https://i.pinimg.com/originals/8a/8b/27/8a8b2781551437b052d0ce67c355188e.gif); */
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+.dialog-text{
+        font-family: "Just Another Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        padding: 14%;
+}
+a{
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #197C4B;
+    margin-left: 15%;
+}
+.texto-corrido{
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 50%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.img-hoja3{
+    background-image: url(./hoja\ 3.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+.dialog-text2{
+        font-family: "Just Another Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        margin: auto;
+        padding-top: 30%;
+        max-width: max-content
+        
+}
+.texto-corrido2{
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 18%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.dialog-text3{
+     font-family: "Just Another Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        margin-left: 40%;
+        margin-top: 4%;
+}
+.img-hoja4{
+    background-image: url(./hoja\ 4.jpg);
+    background-repeat: no-repeat;
+    size: 100%;
+}
+.dialog-text4{
+     font-family: "Just Another Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 35px;
+        padding-left: 53%;
+        padding-top: 35%;
+}

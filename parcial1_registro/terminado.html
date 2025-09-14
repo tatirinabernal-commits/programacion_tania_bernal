@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="Utf-8">
+        <title>Registro</title>
+        <style>
+            .fondo{
+                background-image: url(../registro.html/fondo-form.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                z-index: -1;
+            }
+            body{
+                color: white
+            }
+            #div-padre{
+                background-color: rgba(10, 10, 10, 0.7);
+                width:40%;
+                margin: auto;
+
+/*                 
+                margin-left: 470px;
+                margin-right: 470px;
+                margin-top: 110px;
+                margin-bottom: 100px; */
+                padding-top: 30px;
+                padding-bottom: 60px;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-radius: 30px;
+                text-align: center;
+            }
+            *{
+                box-sizing:border-box;
+                max-width: 100%;
+            }
+            .titulo{
+                width: 100%;
+                padding: 3%; color: #878787;
+                background-color: #5e5e5e;
+                padding-top: 3%;
+                padding-left: 9%;
+                border-radius: 79PX;
+                min-height: 20px;
+            }
+            /* .edad{
+                width: 30%;
+            } */
+            .boton-enviar{
+                margin-top: 60px;
+                background-color: #ffffff;
+            }
+            .boton-cancelar{
+
+                background-color: transparent;
+                border: 1px solid #ffffff;
+                margin-top: 20px;
+            }
+            .boton{
+                display: block;
+                color: #878787;
+                padding: 3%; 
+                border-radius: 79PX;
+                
+                width:20%;
+            }
+            section{
+                width: 45%;
+                display: inline-block;
+                margin: auto;
+            }
+            .renglon{
+                display: flex;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="fondo"></div>
+
+        <form id="div-padre">
+            <h1 style="margin: 3px"> Registro </h1>
+            <p style= "padding-top: 1px; padding-bottom: 30px;">Registra tus datos aquí para la posada de este 2025</p>
+            <!--Inicio de input Nombre-->
+            
+            <h2 style="text-align: left; color: #ffffff;">Nombre completo</h2>
+            <input type="text" class="titulo" placeholder="Nombre Apellido" >
+
+            <div>
+                <h2 style="text-align: left; color: #ffffff;">Telefono</h2>
+                <input type="tel" class ="titulo" placeholder="Telefono">
+            </div>
+
+            <div>
+                <h2 style="text-align: left; color: #ffffff;">Correo electrónico</h2>
+                <input type="email" class ="titulo" placeholder="Ej. correo@dirección">
+            </div>
+
+            <div>
+                <h2 style="text-align: left; color: #ffffff;">Contraseña</h2>
+                <input type="password" class ="titulo" placeholder="Contraseña">
+            </div>
+
+            <div>
+                <h2 style="text-align: left; color: #ffffff;">Fecha de Nacimiento</h2>
+                <input type="date" class ="titulo" placeholder="Fecha de Nacimiento">
+            </div>
+
+            <div class="renglon">
+                <section>
+                    <h2 style="text-align: left; color: #ffffff;">Edad</h2>
+                    <input type="number" class="titulo edad"  placeholder="17">
+                </section>
+                <section>
+                    <h2 style="text-align: left; color: #ffffff;">Alergias</h2>
+                    <textarea name="" id="" placeholder="Alergias" class="titulo"></textarea>
+                </section>
+            </div>
+
+            <center>
+                <button class="boton boton-enviar">Enviar</button>
+
+                <button class="boton boton-cancelar">Cancelar</button>
+            </center>
+        </form>
+    </body>
+</html>   
