@@ -8,7 +8,8 @@ body { font-family: 'Arial', sans-serif; line-height: 1.5; }
   max-width: 100vw;
   width: 20dvw;
   /* height: 3px; */
-  margin-left: 40dvw;
+  margin-left: 0;
+  margin-left: 39%;
 
 }
 .monster-texth2 {
@@ -19,67 +20,151 @@ body { font-family: 'Arial', sans-serif; line-height: 1.5; }
   text-align: center;
   font-weight: 400;
   font-style: normal;
-  font-size: 40px;
-  margin: 20px 0 0;   /* solo un poco de espacio arriba */
-  color: #4a2c1e;
-
+  font-size: 42px;
+  color: #4a2c1e; 
   
 }
+.fuente-NanumMyeongjo{
+  font-family: "Prata", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.fuente-Manjari{
+  font-family: "Manjari", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: 700; */
+  font-style: normal;
+}
+
+.monster-text-style2 {
+  font-family: "Nunito", sans-serif;
+  /* line-height: 2px; */
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 35px;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  color: #774620;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  color: #4a2c1e;
+  margin-bottom: 40px;
+}
+ 
+  
 /* Sección taza */
-.coffee-cup img {
+.coffee-cup-img {
   display: block;
   width: 100%;
   height: auto;
+  width: 100%;
 }
 /* Info con texto + imagen */
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem 1rem;
-  gap: 1.5rem;
+.marcado{
+  font-weight: bold;
+  color: #f37928;
 }
-.info .text {
-  flex: 1 1 300px;
-  max-width: 400px;
+.info-el-cafe{
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 60%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
-.info .image {
-  flex: 1 1 300px;
+
+
+.info-acerca-de {
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 20px;
+  font-style: normal;
+  margin-left: 7%;
+  margin-right: 10%;
+  margin-top: 5%;
+  color: #ffffff;
+  padding-top: 35%;
 }
-.info img {
-  width: 100%;
-  border-radius: 8px;
+.info-descubre-nuestra{
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  margin-left: 7%;
+  margin-right: 10%;
+  color: #ffffff;
+  line-height: 16px;
+}
+.info-Conocer-mas {
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  margin-left: 67%;
+  margin-right: 10%;
+  padding-top: 40px;
+  color: #c4c3c3;
 }
 
 /* Secciones de fondo */
 .background-section {
+  background-image: url(./vasito.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 15%;
   position: relative;
-  min-height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 10vw;
   color: #fff;
+  width:40vw;
 }
-.background-section button {
+.sabores-texto{
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 47px;
+  color: #ffffff; 
+  
+}
+.background-sectionbutton {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
-  padding: 1rem 2rem;
-  font-size: 1rem;
+  padding: 1rem 15rem;
   border-radius: 8px;
   cursor: pointer;
 }
 /* Fondo específico */
 .sabores {
-  background: url(./header-profesionales.jpg) center/cover no-repeat;
+  background: url(./sabores.jpg) center/cover no-repeat;
+  display: block;
+  height: auto;
+  height: 20vw;
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 182%;
+  
 }
 .granos {
-  background: url(./44121691073042-.webp) center/cover no-repeat;
+  background: url(./granos.png) center/cover no-repeat;
+  display: block;
+  height: auto;
+  height: 20vw;
+  margin-top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 182%;
 }
 /* Footer */
-footer {
-  padding: 2rem 1rem;
+.final-text {
+  padding: 6rem 1rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 20px;
   color: #333;
 }

@@ -1,0 +1,136 @@
+
+.text{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #4a2c1e; 
+}
+col{
+  display:flex;
+  justify-content: center;
+}
+div, p, body, a, img{
+  border: 0px solid;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.button-size{
+  padding: 2%;
+  border: 2px solid transparent;
+}
+body{
+  margin: 0%;
+  padding: 0%;
+}
+a:active, a{
+  text-decoration: none !important;
+  color: white;
+}
+.botton-hover:hover{
+  border: 2px solid;
+  border-color: white;
+}
+.estilo-barra{
+  background-color: black;
+}
+.estilo-sombra{
+  box-shadow: 5px 5px 10px gray;
+}
+.sticky-menu{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 5px 5px px rgba(0, 0, 0, 5);
+}
+.col-menu{
+  display: flex;
+  justify-content: space-between;
+}
+.col-menu-center{
+  display: flex;
+  justify-content: center;
+}
+.espaciado{
+  padding: 2%;
+  border: 1px solid transparent;
+}
+.imagen-fondo{
+  background-image: url(./paisaje.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: 100dvw;
+  position: relative;
+
+}
+.japon{
+  background-image: url(./df2cc0e555c43545496f3a7b264931b972ff9aed.png);
+  background-repeat: no-repeat;
+  height: 165px;
+  position: relative;
+}
+.contenedor-card{
+  width: 280px;
+  background-color: #F6F6F6;
+  border-radius: 9px;
+  height: 380px;  
+}
+.col{
+  display: flex;
+  justify-content: center;
+}
+.card-tamano{
+  width: 280px;
+  height: 400px;
+  background-color: #F6F6F6;
+}
+.nuevo{
+  background-color: yellow;
+  position: absolute;
+  width: 59px;
+  height: 20px;
+  border-radius: 22px;
+  top: 5%;
+  left: 75%;
+  text-align: center;
+}
+.visita-japon{
+  background-color: black;
+  color: white;
+  width: 280px;
+  opacity: 78%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 22px;
+  position: absolute;
+  top: 75%;
+  text-align: left;
+  }
+.text-nuevo{
+  color: black;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  color: yellow; 
+  text-align: center;
+  width: 70px;
+  position: relative;
+  left: 70%;
+  top: 5%;
+
+  }
+
+  
