@@ -1,0 +1,81 @@
+.col--{
+  display: flex;
+  justify-content: center;
+  
+
+  gap:7%;
+}
+.button-size{
+  padding: 2%;
+  border: 2px solid transparent;
+}
+.estilo-barra{
+  background-color: rgb(255, 255, 255);
+}
+.botton-hover:hover{
+  border: 2px solid;
+  border-color: white;
+}
+.text{
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #323C45; 
+}
+.imagen-fondo{
+  /* background-image: url(./paisaje.png); */
+  /* background-repeat: no-repeat; */
+  /* height: 400px; */
+  background-size: 100vw;
+  position: relative;
+  width: 100%
+}
+.cuadro{
+ /* background: #00000081;*/
+  /* opacity: 50%; */
+  color: #000000;
+  cursor: pointer;
+
+  position: absolute;
+  top: 16%;
+  transform: translateY(50%);
+  left: 24%;
+
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a{
+    text-decoration: none !important
+}
+.contenedor-fondo {
+  position: relative;
+}
+.text-explora{
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 64px;
+  color: #ffffff; 
+}
+.text-ideas{
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #ffffff; 
+}

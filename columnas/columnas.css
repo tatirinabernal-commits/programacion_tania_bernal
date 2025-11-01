@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  max-width: 100%;
 }
 .text{
   font-family: "Nunito", sans-serif;
@@ -10,7 +11,7 @@
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  color: #4a2c1e; 
+  color: #ff7eaf; 
 }
 col{
   display:flex;
@@ -41,7 +42,7 @@ a:active, a{
   border-color: white;
 }
 .estilo-barra{
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 .estilo-sombra{
   box-shadow: 5px 5px 10px gray;
@@ -60,6 +61,7 @@ a:active, a{
 .col-menu-center{
   display: flex;
   justify-content: center;
+  border-radius: 20px;
 }
 .espaciado{
   padding: 2%;
@@ -81,13 +83,32 @@ a:active, a{
   text-align: left;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
+  color: #ffffff; 
+}
+.text-cotizar{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
   font-size: 16px;
   color: #ffffff; 
 }
-.cuadro{
-  background: #00000081;
-  /* opacity: 50%; */
+.boton-cotizar{
+  background: transparent;
+  border: 2px solid #fff;
   color: #fff;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.cuadro{
+  background: transparent;
+  /* opacity: 50%; */
+  color: transparent;
   cursor: pointer;
 
   position: absolute;
@@ -105,12 +126,23 @@ a:active, a{
 .contenedor-fondo {
   position: relative;
 }
-.japon{
-  background-image: url(./df2cc0e555c43545496f3a7b264931b972ff9aed.png);
+#francia{
+  background-image: url(./francia.png);
+}
+#italia{
+  background-image: url(./italia.png);
+}
+#japon{
+  background-image: url(./JAPON.png);
+}
+#japon,#italia,#francia{
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 165px;
   position: relative;
 }
+
 .contenedor-card{
   width: 280px;
   background-color: #F6F6F6;
@@ -120,13 +152,27 @@ a:active, a{
 .col{
   display: flex;
   justify-content: center;
-  width: 71%;
-  margin: auto;
+  
+  margin: 4% auto;
+  gap:7%;
+}
+.col--{
+  display: flex;
+  justify-content: center;
+  
+
+  gap:7%;
 }
 .card-tamano{
   width: 280px;
   height: 400px;
   background-color: #F6F6F6;
+  position: relative;
+  border-radius: 9px;
+}
+.ver-mas{
+  position: absolute;
+  right: 10%;
 }
 .nuevo{
   background-color: yellow;
@@ -138,7 +184,7 @@ a:active, a{
   left: 75%;
   text-align: center;
 }
-.visita-japon{
+.visita-pais{
   background-color: black;
   color: white;
   width: 280px;
