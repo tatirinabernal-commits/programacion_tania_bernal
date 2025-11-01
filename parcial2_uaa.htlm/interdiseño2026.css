@@ -1,8 +1,18 @@
+:root{
+  font-size: max(1vw,2vh);
+  /*
+    1vw -> 12.8 px si 100vw son 1280px
+  */
+}
+body{
+  padding: 0% 3.2%;
+}
+a{
+  text-decoration: none !important
+}
 .col--{
   display: flex;
   justify-content: center;
-  
-
   gap:7%;
 }
 .button-size{
@@ -16,7 +26,7 @@
   border: 2px solid;
   border-color: white;
 }
-.text{
+*{
   font-family: "Manjari", sans-serif;
   font-weight: 400;
   /* font-weight: <weight>; */
@@ -24,58 +34,202 @@
   text-align: center;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.text{
   color: #323C45; 
 }
-.imagen-fondo{
-  /* background-image: url(./paisaje.png); */
-  /* background-repeat: no-repeat; */
-  /* height: 400px; */
-  background-size: 100vw;
-  position: relative;
-  width: 100%
-}
-.cuadro{
- /* background: #00000081;*/
-  /* opacity: 50%; */
-  color: #000000;
-  cursor: pointer;
-
-  position: absolute;
-  top: 16%;
-  transform: translateY(50%);
-  left: 24%;
-
-
-  display: flex;
-  justify-content: space-evenly;
+.centrado-flex{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-a{
-    text-decoration: none !important
 }
 .contenedor-fondo {
   position: relative;
+  /* max-width:93.6%; */
+  .imagen-fondo{
+    background-size: 100vw;
+    width: 100%;
+    /* z-index:-1; */
+  }
+  #contenedor-explorar{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    .contenido{
+      color:white;
+      width:70%;
+      font-size: 5vw;
+      *{
+        font-size: 1em;
+      }
+      h1{
+        /* font-size: 5vw; */
+        position: relative;
+        margin-top:10%;
+        margin-bottom:9%;
+      }
+      h1::after{
+        content:"“Aquí comienzan las ideas que cambian el mundo”";
+        display: block;
+        position: absolute;
+        font-size: .422em;
+        right:0;
+        left:0;
+        transform: translateY(-30%);
+        text-align: center;
+      }
+      h1::before{
+        content:"";
+        display: block;
+        background-image: url(./imgs/logo-uaa-tipo-1.png);
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+        width:8vw;
+        aspect-ratio: 1;
+        bottom:150%;
+        left:44%;
+      }
+      p{
+        /* display: none; */
+        margin-top:0%;
+        font-size: .422em;
+      }
+      #btn-explorar-cursos{
+        display: block;
+        /* width:18%; */
+        border:2px solid rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 6px;
+        padding: .8% 6%;
+        font-size: .375em;
+      }
+    }
+    .text{
+      color: #ffffff; 
+    }
+  }
 }
-.text-explora{
-  font-family: "Manjari", sans-serif;
-  font-weight: 400;
-  /* font-weight: <weight>; */
-  font-style: normal;
-  text-align: left;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 64px;
-  color: #ffffff; 
+
+#contenedor-bienvenida{
+  width:58.6%;
+  font-size: 5vw;
+  text-align: center;
+  margin: 4% auto;
+  h1{
+    font-size: .75em;
+    margin-top: 0%;
+    margin-bottom: 3%;
+  }
+  p{
+    font-size: .20em;
+  }
 }
-.text-ideas{
-  font-family: "Manjari", sans-serif;
-  font-weight: 400;
-  /* font-weight: <weight>; */
-  font-style: normal;
-  text-align: left;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  color: #ffffff; 
+
+.cartas{
+  display: grid;
+  max-width: 85%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:3.2%;
+  font-size: 4vw;
+  .card{
+    width:100%;
+    aspect-ratio: 230/387;
+    
+    background-color: black;
+    color:white;
+    border:2px solid black;
+    border-radius: 38px;
+    padding:9%;
+    
+    
+    display: flex;
+    align-items: end;
+    .contenido{
+      height: 45%;
+      display:grid;
+      grid-template-rows: auto 1fr auto;
+      h3{
+        margin: 0%;
+        font-size: .5em;
+      }
+      p{
+        text-align: left;
+        /* font-size: .3em; */
+        font-size: 1.4rem;
+      }
+      a{
+        display: block;
+        width:max-content;
+        width:70%;
+        border:2px solid rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 6px;
+        padding: 3% 10%;
+        font-size: .288em;
+        /* font-size: 1em; */
+      }
+    }
+  }
 }
+
+.card-prueba-2{
+  aspect-ratio: 230/387;
+  background-color: black;
+  color:white;
+  padding:9%;
+  display: flex;
+  align-items: end;
+  .contenido{
+    background-color: red;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn-leer-mas{
+      display: block;
+      width:max-content;
+      width:70%;
+      border:2px solid rgb(255, 255, 255);
+      text-align: center;
+      justify-content: center;
+      border-radius: 6px;
+      padding: 3% 10%;
+    }
+}
+/* .card-prueba{
+  aspect-ratio: 230/387;
+  background-color: black;
+  color:white;
+  padding:9%;
+  display: flex;
+  flex-direction: column-reverse;
+  .contenido{
+    height: 45%;
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    h3{
+      margin: 0%;
+    }
+    .btn-leer-mas{
+      display: block;
+      width:max-content;
+      width:70%;
+      border:2px solid rgb(255, 255, 255);
+      text-align: center;
+      justify-content: center;
+      border-radius: 6px;
+      padding: 3% 10%;
+    }
+  }
+} */
