@@ -46,9 +46,9 @@ a{
 .estilo-barra{
   background-color: rgb(255, 255, 255);
 }
-.botton-hover:hover{
-  border: 2px solid;
-  border-color: white;
+.botton-hover:hover  a{
+  border-bottom: 2px solid gray;
+  
 }
 .ventana-activa{
   a{
@@ -76,4 +76,8 @@ a{
 }
 .hover-agrandar:hover{
   transform: scale(1.1);
+}
+
+.text-left{
+  text-align: left;
 }

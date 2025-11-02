@@ -39,7 +39,7 @@
       h1::before{
         content:"";
         display: block;
-        background-image: url(./imgs/logo-uaa-tipo-1.png);
+        background-image: url(../imgs/logo-uaa-tipo-1.png);
         position: absolute;
         background-position: center;
         background-size: cover;
@@ -149,16 +149,16 @@
   }
 
   #actualizacion-medica{
-    background-image: url(./imgs/Pagina-principal/actualizacion-medica.png);
+    background-image: url(../imgs/Pagina-principal/actualizacion-medica.png);
   }
   #modernizacion-campus{
-    background-image: url(./imgs/Pagina-principal/modernizacion-campus.png);
+    background-image: url(../imgs/Pagina-principal/modernizacion-campus.png);
   }
   #sostenibilidad{
-    background-image: url(./imgs/Pagina-principal/sostenibilidad.png);
+    background-image: url(../imgs/Pagina-principal/sostenibilidad.png);
   }
   #expertos{
-    background-image: url(./imgs/Pagina-principal/expertos.png);
+    background-image: url(../imgs/Pagina-principal/expertos.png);
   }
 }
 
@@ -227,7 +227,7 @@ footer{
       flex:1;
       margin: 0% 2%;
       aspect-ratio: 1;
-      background-image: url(./imgs/imgs-contacto.png);
+      background-image: url(../imgs/imgs-contacto.png);
       background-size: 800%;
     }
     #facebook{
