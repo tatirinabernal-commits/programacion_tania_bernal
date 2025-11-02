@@ -1,5 +1,5 @@
 :root{
-  font-size: max(1vw,2vh);
+  font-size: max(1vw,2.3vh);
   /*
     1vw -> 12.8 px si 100vw son 1280px
   */
@@ -79,6 +79,7 @@ a{
         display: block;
         position: absolute;
         font-size: .422em;
+        /* font-size: 2.109rem; */
         right:0;
         left:0;
         transform: translateY(-30%);
@@ -118,51 +119,69 @@ a{
 }
 
 #contenedor-bienvenida{
+  min-width:58.6%;
   width:58.6%;
+  max-width: 90%;
   font-size: 5vw;
   text-align: center;
   margin: 4% auto;
   h1{
     font-size: .75em;
+    font-size: 3.75rem;
     margin-top: 0%;
     margin-bottom: 3%;
   }
   p{
     font-size: .20em;
+    font-size: 1rem;
   }
 }
 
 .cartas{
   display: grid;
   max-width: 85%;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap:3.2%;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* grid-template-columns: repeat(auto-fill,minmax(150px,1fr)); */
+  gap:2rem;
   font-size: 4vw;
   .card{
     width:100%;
     aspect-ratio: 230/387;
     
-    background-color: black;
+    /* background-color: black; */
     color:white;
-    border:2px solid black;
+    /* border:2px solid black; */
     border-radius: 38px;
     padding:9%;
-    
+
+    background-position: center;
+    background-size: cover;
     
     display: flex;
     align-items: end;
+
     .contenido{
+      min-height: min-content;
       height: 45%;
+      max-height: 60%;
       display:grid;
       grid-template-rows: auto 1fr auto;
+      justify-items: center;
+      /* gap:10%; */
+      /* text-align: left; */
       h3{
         margin: 0%;
         font-size: .5em;
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 5%;
       }
       p{
         text-align: left;
         /* font-size: .3em; */
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        max-height: max-content;
+        margin:0%;
       }
       a{
         display: block;
@@ -173,63 +192,113 @@ a{
         border-radius: 6px;
         padding: 3% 10%;
         font-size: .288em;
-        /* font-size: 1em; */
+        font-size: 1.2rem;
       }
     }
   }
+
+  #actualizacion-medica{
+    background-image: url(./imgs/Pagina-principal/actualizacion-medica.png);
+  }
+  #modernizacion-campus{
+    background-image: url(./imgs/Pagina-principal/modernizacion-campus.png);
+  }
+  #sostenibilidad{
+    background-image: url(./imgs/Pagina-principal/sostenibilidad.png);
+  }
+  #expertos{
+    background-image: url(./imgs/Pagina-principal/expertos.png);
+  }
 }
 
-.card-prueba-2{
-  aspect-ratio: 230/387;
-  background-color: black;
-  color:white;
-  padding:9%;
-  display: flex;
-  align-items: end;
-  .contenido{
-    background-color: red;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .btn-leer-mas{
-      display: block;
-      width:max-content;
-      width:70%;
-      border:2px solid rgb(255, 255, 255);
-      text-align: center;
-      justify-content: center;
-      border-radius: 6px;
-      padding: 3% 10%;
-    }
+.btn-transparente{
+  display: block;
+  width:max-content;
+  /* width:70%; */
+  border:2px solid rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 6px;
+  padding: .5rem 2rem;
+  /* font-size: .288em; */
+  font-size: calc(1.2 * 1vw);
 }
-/* .card-prueba{
-  aspect-ratio: 230/387;
-  background-color: black;
-  color:white;
-  padding:9%;
-  display: flex;
-  flex-direction: column-reverse;
-  .contenido{
-    height: 45%;
-    display:flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
-    h3{
-      margin: 0%;
-    }
-    .btn-leer-mas{
-      display: block;
-      width:max-content;
-      width:70%;
-      border:2px solid rgb(255, 255, 255);
-      text-align: center;
-      justify-content: center;
-      border-radius: 6px;
-      padding: 3% 10%;
+
+.banner{
+  margin:5.7vw auto;
+  position:relative;
+  .imagen{
+    width: 100%;
+  }
+  .boton{
+    position: absolute;
+    top:0;
+    width:100%;
+    bottom:0;
+    /* background-color: green; */
+    display: grid;
+    grid-template-rows: auto;
+    .btn-acceder{
+      margin:auto;
     }
   }
-} */
+}
+#banner-ponencias{
+  .boton{
+    padding-left: 60%;
+  }
+  .btn-acceder{
+    color:black;
+    border:2px solid black;
+    top: 39%;
+  }
+}
+#banner-dia-muertos{
+  .boton{
+    padding-left: 18vw;
+    width:45vw;
+    margin-top: 15%;
+  }
+  .btn-acceder{
+    color:white;
+  }
+}
+
+footer{
+  width: 40rem;
+  padding-bottom: 10%;;
+  h1{
+    font-size: 3.75rem;
+  }
+  #links-contacto{
+    display: flex;
+    width:100%;
+    .icono-contacto{
+      flex:1;
+      margin: 0% 2%;
+      aspect-ratio: 1;
+      background-image: url(./imgs/imgs-contacto.png);
+      background-size: 800%;
+    }
+    #facebook{
+      background-position: 0%;
+    }
+    #instagram{
+      background-position: 20%;
+    }
+    #youtube{
+      background-position: 40%;
+    }
+    #twitter{
+      background-position: 60%;
+    }
+    #linked-in{
+      background-position: 80%;
+    }
+    #tik-tok{
+      background-position: 100%;
+    }
+  }
+  .logo-uaa{
+    width:100%;
+  }
+}
