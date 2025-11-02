@@ -1,0 +1,94 @@
+.form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:80%;
+
+    border:2px solid black;
+    border-radius: 4.8rem;
+    background-color: #D3D9DF;
+    aside{
+        aspect-ratio: 639/783;
+        /* height: 80vh; */
+    }
+}
+
+.form{
+    min-width: 80%;
+    /* width:100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border:2px solid black;
+    border-radius: 4.8rem;
+
+    background-color: #D3D9DF;
+
+    #imagen{
+        /* background-color: blue; */
+        background-image: url(./imgs/Registro/img-registro.png);
+        aspect-ratio: 639/783;
+        background-position: 0%;
+        background-size: cover;
+        color:white;
+
+        
+        align-items: start;
+        padding-left: 10%;
+        .texto{
+            padding-bottom: 15%;
+        }
+        h1{
+            font-size: 3rem;
+            margin-bottom: 0%;
+        }
+        p{
+            font-size: 1.6rem;
+            margin-top:0%;
+            text-align: left;
+        }
+    }
+    #formulario{
+        display: grid;
+        grid-template-rows: auto 1fr auto auto;
+        padding: 10%;
+        
+        h1{
+            font-size: 2rem;
+            color:#323C45;
+            margin:0%;
+        }
+        #btn-enviar{
+            background-color: #323C45;
+            color:white;
+        }
+        #btn-cancelar{
+            color:black;
+        }
+        #btn-enviar, #btn-cancelar{
+            font-size: 1.4rem;
+            margin:.5rem 0%;
+            border:2px solid black;
+            border-radius: .6rem;
+            padding:.5rem 0;
+            display: block;
+            width:100%;
+        }
+        .row{
+            width:100%;
+            margin:2rem 0%;
+            display:flex;
+            gap:1rem;
+            height: 2.5rem;
+            .item{
+                flex:1;
+            }
+        }
+    }
+
+    select,input{
+        background: none;
+        border-radius: 6px;
+        border:2px solid black;
+        font-size: 1.3rem;
+    }
+}

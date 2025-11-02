@@ -1,0 +1,30 @@
+header{
+    h1{
+        font-size: 3.75rem;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+}
+
+.cursos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+    .curso{
+        /* padding: 0% 10%; */
+        img{
+            aspect-ratio: 550/441;
+            /* width:80%; */
+        }
+        h2{
+            font-size: 1.8rem;
+            text-align: left;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: 1.3rem;
+            text-align: left;
+        }
+    }
+}

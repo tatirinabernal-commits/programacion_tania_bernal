@@ -1,0 +1,79 @@
+*{
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.text{
+  color: #323C45; 
+}
+:root{
+  font-size: max(1vw,1.6vh);
+  /* font-size: 1vw; */
+  /*
+    1vw -> 12.8 px si 100vw son 1280px
+  */
+}
+body{
+  padding: 0% 3.2%;
+}
+a{
+  text-decoration: none !important;
+  color:white;
+}
+.col--{
+  display: flex;
+  justify-content: center;
+  gap:7%;
+  width:80%;
+}
+.button-size{
+  padding: 2%;
+  border: 2px solid transparent;
+  min-width: 10vw;
+  a{
+    /* min-width: 10vw; */
+    display: block;
+    width: 100%;
+  }
+}
+.estilo-barra{
+  background-color: rgb(255, 255, 255);
+}
+.botton-hover:hover{
+  border: 2px solid;
+  border-color: white;
+}
+.ventana-activa{
+  a{
+    border-bottom: 2px solid black;
+  }
+}
+.centrado-flex{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hover-claro:hover{
+  transform:scale(1.2);
+  color:black !important;
+  background: white;
+  /* background: linear-gradient(45deg, rgb(71, 71, 255),white, rgb(43, 43, 255)); */
+}
+.hover-oscuro:hover{
+  transform:scale(1.2);
+  color:white !important; 
+  background: rgb(39, 39, 39);
+  /* background: linear-gradient(45deg, rgb(71, 71, 255),white, rgb(43, 43, 255)); */
+}
+.hover-agrandar:hover{
+  transform: scale(1.1);
+}
