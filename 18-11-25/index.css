@@ -65,7 +65,7 @@
 .aparecer-small{
     display: none;
 }
-@media(max-width:470px){
+@media(max-width:600px){
     #sala-2{
         display: block;
     }
